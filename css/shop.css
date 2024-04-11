@@ -1,0 +1,191 @@
+/*Shop Page*/
+
+/*Style*/
+/*Category navigation*/
+.container {
+  display: flex;
+  padding: 100px 12%;
+}
+.product-titel{
+			clear: both; 
+            background: white;
+            text-align: left;
+            padding: 10px 12%;
+			font-family: 'Rufina', serif;
+        }
+
+nav.cat-nav {
+  background-color: #f3d2c1;
+  color: #001858;
+  width: 20%; /* Adjust the width as needed */
+  padding: 20px;
+ 
+}
+
+
+nav.cat-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav.cat-nav li {
+  margin-bottom: 10px;
+}
+
+nav.cat-nav a {
+  text-decoration: none;
+  color: #001858;
+  display: block;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+nav.cat-nav a:hover {
+  background-color: #f582ae; /* Hover background color */
+  color: #fffffe; /* Change text color on hover */
+}
+
+
+/*product box*/
+
+.right-box {
+  flex: 1;
+  background-color: #f3d2c1; 
+  padding: 20px;
+}
+.pdt-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product{
+	background-color:#FEF6E4;
+	flex: 0 1 calc(33.33% - 15px);
+	border-radius:5px;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	overflow: hidden;
+	padding:30px 20px;
+}
+
+.product img{
+	width: 90%;
+	height: 220px;
+	object-fit: cover;
+	transition: transform 0.3s;
+}
+
+.product:hover{
+	box-shadow: -6px -4px 20px #f582ae inset;
+}
+
+.pdt-name{
+	font-family: Rufina;
+	font-size:16px;
+    font-weight: 700;
+    word-wrap: break-word;
+	text-align:left;
+	color:#001858;
+	text-shadow: #f582ae 1px 0 10px;
+}
+
+.pdt-price{
+	font-family: Rufina;
+	font-size:15px;
+    font-weight: 500;
+    word-wrap: break-word;
+	text-align:left;
+	color:#001858;
+	text-shadow: 1px 1px 2px #f582ae;
+}
+
+/* pagination */
+
+.pagination {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+ background: #f582ae;
+    color: #172C66;
+    font-family: Poppins;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+	box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	font-weight: 580;
+	transition: background-color 0.3s;
+}
+
+.pagination button:hover {
+	background: white;
+	color:#c8815f;
+}
+
+
+/*product details*/
+.single-product{
+	max-width:900px;
+	margin:auto;
+	padding-left:20px;
+	padding-right:20px;
+
+}
+
+.row{
+	display:flex;
+	align-items:center;
+	flex-wrap:wrap;
+	justify-content:space-around;
+}
+	
+.right-box .col-2{
+	flex-basis:50%;
+	min-width:300px;
+	padding: 20px;
+}
+
+.right-box .col-2 img{
+	max-width:95%;
+	padding: 0;
+	padding:18px 0;
+}
+
+.product-details {
+    float: right; 
+    width: 40%; 
+    padding-right: 10%; 
+}
+
+/* Apply styles to the select element */
+.product-select {
+  font-family: 'Poppins', sans-serif; /* Set the font family to Poppins */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make the select element fill the container */
+}
+
+/* Apply styles to the options within the select element */
+.product-select option {
+  font-family: 'Poppins', sans-serif; /* Set the font family for options to Poppins */
+  color: #172C66; /* Change the text color */
+}
+
+.quantity-select {
+  font-family: 'Poppins', sans-serif; /* Set the font family to Poppins */
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make the input element fill the container */
+}
+
+/* Apply styles to the total price element */
+.total-price{
+  font-family: 'Poppins', sans-serif; /* Set the font family to Poppins */
+}
+
+
